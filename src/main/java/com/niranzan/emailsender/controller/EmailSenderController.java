@@ -36,13 +36,13 @@ public class EmailSenderController {
 		log.info("START... Sending email");
 
         Mail mail = new Mail();
-        mail.setFrom("niranzan.in@gmail.com");//replace with your desired email
-        mail.setMailTo("jitu.ucp@gmail.com");//replace with your desired email
+        mail.setFrom("sender@email.com");
+        mail.setMailTo("receiver@email.com");
         mail.setSubject("Email with Spring boot and thymeleaf template!");
 
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("name", "Developer!");
-        model.put("location", "United States");
+        model.put("location", "India");
         model.put("sign", "Java Developer");
         mail.setProps(model);
 

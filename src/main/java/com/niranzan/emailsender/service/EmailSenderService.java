@@ -36,7 +36,7 @@ public class EmailSenderService {
         MimeMessageHelper helper = new MimeMessageHelper(message,
                 MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED,
                 StandardCharsets.UTF_8.name());
-        helper.addAttachment("template-cover.png", new ClassPathResource("javabydeveloper-email.PNG"));
+        helper.addAttachment("template-cover.png", new ClassPathResource("template-cover.png"));
         Context context = new Context();
         context.setVariables(mail.getProps());
         String html = templateEngine.process("newsletter-template", context);

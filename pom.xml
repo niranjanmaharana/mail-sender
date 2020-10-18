@@ -9,9 +9,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.niranzan</groupId>
-	<artifactId>email-sender</artifactId>
+	<artifactId>mail-sender</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>email-sender</name>
+	<name>mail-sender</name>
 	<description>Demo project for Spring Boot Email Sender using Thymeleaf</description>
 
 	<properties>
